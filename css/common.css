@@ -32,6 +32,15 @@ button {
   cursor: pointer;
 }
 
+.logo-search-icon {
+  width: 35px;
+  fill: var(--clr-gray);
+
+  &:hover {
+    fill: #fff;
+  }
+}
+
 .profile-icon {
   border-radius: 50%;
 }
