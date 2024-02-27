@@ -46,4 +46,42 @@
             }
         }
     }
+
+    & .nav-item > a {
+        display: flex;
+        color: var(--clr-gray);
+        align-items: center;
+        gap: 1rem;
+        padding: 0.6rem 1rem;
+        transition: color 300ms;
+        white-space: nowrap;
+        border-radius: 8px;
+
+        div {
+            letter-spacing: 0.03em;
+        }
+
+        &:hover {
+            background-color: var(--clr-dark-80);
+        }
+
+        &:hover {
+            background-color: #565656;
+        }
+
+        &:hover > * {
+            color: white;
+            fill: white;
+        }
+    }
+
+    & .primary-nav {
+        padding-block: 1rem;
+        border-bottom: 1px solid #565656;
+    }
+
+    & .primary-nav > ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
