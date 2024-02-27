@@ -3,17 +3,21 @@
   grid-template-columns: 1fr;
 
   & .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: var(--clr-dark);
     padding-inline: min(2vw, 1rem);
 
-    & .logo {
-      width: clamp(150px, 25vw, 250px);
+    & .navbar-main {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      & .logo {
+        width: clamp(150px, 25vw, 250px);
+        margin-right: auto;
+      }
     }
 
-    & .hamburger-nav-icon {
+    & .navbar-icon {
       width: min(15vw, 70px);
       /* width: 70px; */
       fill: var(--clr-accent);
@@ -21,6 +25,24 @@
 
       &:hover {
         fill: #fff;
+      }
+    }
+
+    & .navbar-search {
+      display: none;
+
+      & #search-bar {
+        margin-block: 8px;
+        padding-inline: 8px;
+        flex: 1;
+        background-color: #f4f4f4;
+        border: 1px solid #cecece;
+        border-radius: 0.5rem;
+        font-size: clamp(0.7rem, 4vw, 2rem);
+
+        &:focus {
+          outline: none;
+        }
       }
     }
   }
