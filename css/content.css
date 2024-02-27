@@ -1,0 +1,30 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.profile-header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.welcome-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 1rem;
+
+    & .welcome__text {
+        font-size: clamp(1rem, 0.5rem + 5vw, 2rem);
+    }
+}
+
+.welcome-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
