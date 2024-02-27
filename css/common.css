@@ -77,3 +77,14 @@ a {
     fill: var(--clr-gray);
     transition: fill 300ms;
 }
+
+.navbar-icon {
+    width: min(15vw, 70px);
+    /* width: 70px; */
+    fill: var(--clr-accent);
+    cursor: pointer;
+
+    &:hover {
+        fill: #fff;
+    }
+}
