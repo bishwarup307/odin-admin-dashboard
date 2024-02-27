@@ -75,6 +75,14 @@
         }
     }
 
+    & .navbar-links {
+        display: none;
+    }
+
+    & .navbar-links.expanded {
+        display: block;
+    }
+
     & .primary-nav {
         padding-block: 1rem;
         border-bottom: 1px solid #565656;
@@ -85,3 +93,9 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
+
+/* @media only screen and (min-width: 768px) {
+    .wrapper {
+        grid-template-columns: 350px 1fr;
+    }
+} */

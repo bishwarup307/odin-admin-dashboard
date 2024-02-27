@@ -4,13 +4,21 @@ const navWithSearch = document.querySelector(".navbar-search");
 const searchInput = document.querySelector("#search-bar");
 const navbarBack = document.querySelector(".navbar-back");
 
+const navbarLinks = document.querySelector(".navbar-links");
+const hamburgerMenu = document.querySelector(".hamburger-nav-icon");
+
 navSearchButton.addEventListener("click", () => {
-  navbarMain.style.display = "none";
-  navWithSearch.style.display = "flex";
-  searchInput.focus();
+    navbarMain.style.display = "none";
+    navWithSearch.style.display = "flex";
+    searchInput.focus();
 });
 
 navbarBack.addEventListener("click", () => {
-  navbarMain.style.display = "flex";
-  navWithSearch.style.display = "none";
+    navbarMain.style.display = "flex";
+    navWithSearch.style.display = "none";
+});
+
+hamburgerMenu.addEventListener("click", () => {
+    console.log("clicked");
+    navbarLinks.classList.toggle("expanded");
 });
