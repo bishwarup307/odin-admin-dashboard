@@ -1,14 +1,25 @@
 :root {
-    --clr-primary: #096bf1;
-    --clr-secondary: #22c1c3;
-    --clr-gray: #ddddddff;
-    --clr-dark: #272727ff;
-    --ash-accent: #a3b4a2ff;
+  --clr-primary: #096bf1;
+  --clr-secondary: #22c1c3;
+  --clr-gray: #ddddddff;
+  --clr-dark: #272727ff;
+  --clr-accent: #a3b4a2ff;
 
-    --gradient: linear-gradient(
-        180deg,
-        rgba(34, 193, 195, 1) 0%,
-        rgba(9, 107, 241, 0.4150253851540616) 75%,
-        rgba(208, 228, 247, 0.31418504901960786) 100%
-    );
+  --gradient: linear-gradient(
+    180deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(9, 107, 241, 0.4150253851540616) 75%,
+    rgba(208, 228, 247, 0.31418504901960786) 100%
+  );
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
 }

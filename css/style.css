@@ -1,0 +1,27 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  & .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--clr-dark);
+    padding-inline: min(2vw, 1rem);
+
+    & .logo {
+      width: clamp(150px, 25vw, 250px);
+    }
+
+    & .hamburger-nav-icon {
+      width: min(15vw, 70px);
+      /* width: 70px; */
+      fill: var(--clr-accent);
+      cursor: pointer;
+
+      &:hover {
+        fill: #fff;
+      }
+    }
+  }
+}
