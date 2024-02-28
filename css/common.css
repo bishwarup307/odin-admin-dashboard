@@ -1,8 +1,12 @@
 :root {
-    --clr-primary: #096bf1;
-    --clr-secondary: #22c1c3;
+    --clr-primary: hsl(215, 93%, 49%);
+    --clr-primary-500: hsl(215, 93%, 39%);
+    --clr-secondary: hsl(181, 70%, 45%);
     --clr-gray: #ddddddff;
-    --clr-dark: #272727ff;
+    --clr-dark: hsl(0, 0%, 15%);
+    --clr-dark-300: hsl(0, 0%, 35%);
+    --clr-dark-250: hsl(0, 0%, 45%);
+    --clr-dark-200: hsl(0, 0%, 55%);
     --clr-accent: rgb(155, 155, 155);
 
     --gradient: linear-gradient(
@@ -118,4 +122,33 @@ a {
 
 .button-icon {
     padding-left: 0.25rem;
+}
+
+.fontawesome-replacement-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.fs-large {
+    font-size: clamp(1rem, 0.5rem + 2vw, 1.3rem);
+    font-weight: 600;
+}
+
+.muted200 {
+    color: var(--clr-dark-200);
+    fill: var(--clr-dark-200);
+}
+
+.muted250 {
+    color: var(--clr-dark-250);
+    fill: var(--clr-dark-250);
+}
+
+.muted300 {
+    color: var(--clr-dark-300);
+    fill: var(--clr-dark-300);
+}
+
+.padding-right-responsive {
+    padding-right: clamp(1rem, 0.5rem + 5vw, 2rem);
 }
