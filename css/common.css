@@ -1,154 +1,161 @@
 :root {
-    --clr-primary: hsl(215, 93%, 49%);
-    --clr-primary-500: hsl(215, 93%, 39%);
-    --clr-secondary: hsl(181, 70%, 45%);
-    --clr-gray: #ddddddff;
-    --clr-dark: hsl(0, 0%, 15%);
-    --clr-dark-300: hsl(0, 0%, 35%);
-    --clr-dark-250: hsl(0, 0%, 45%);
-    --clr-dark-200: hsl(0, 0%, 55%);
-    --clr-accent: rgb(155, 155, 155);
+  --clr-primary: hsl(215, 93%, 49%);
+  --clr-primary-500: hsl(215, 93%, 39%);
+  --clr-secondary: hsl(181, 70%, 45%);
+  --clr-gray: #ddddddff;
+  --clr-dark: hsl(0, 0%, 15%);
+  --clr-dark-300: hsl(0, 0%, 35%);
+  --clr-dark-250: hsl(0, 0%, 45%);
+  --clr-dark-200: hsl(0, 0%, 55%);
+  --clr-accent: rgb(155, 155, 155);
 
-    --gradient: linear-gradient(
-        180deg,
-        rgba(34, 193, 195, 1) 0%,
-        rgba(9, 107, 241, 0.4150253851540616) 75%,
-        rgba(208, 228, 247, 0.31418504901960786) 100%
-    );
+  --gradient: linear-gradient(
+    180deg,
+    rgb(39, 89, 155) 0%,
+    rgba(69, 100, 125, 0.415) 20%,
+    rgba(255, 255, 255, 0.314) 40%
+  );
 
-    --fs-400: 1rem;
-    --fs-600: 2rem;
-    --fs-xl: 5rem;
+  --fs-400: 1rem;
+  --fs-600: 2rem;
+  --fs-xl: 5rem;
 }
 
 * {
-    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-        "Helvetica Neue", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gradient);
 }
 
 button {
-    cursor: pointer;
-    white-space: nowrap;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .profile-icon {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .profile-icon {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .profile-icon.profile-icon-small {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 .profile-icon.profile-icon-tiny {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .profile-icon.profile-icon-medium {
-    width: 45px;
-    height: 45px;
+  width: 45px;
+  height: 45px;
 }
 
 .profile-icon.profile-icon-large {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .profile-icon.profile-icon-xl {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .profile-icon-inline {
-    margin-left: 8px;
-    margin-right: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .nav-icon {
-    height: 28px;
-    width: 28px;
-    fill: var(--clr-gray);
-    transition: fill 300ms;
+  height: 28px;
+  width: 28px;
+  fill: var(--clr-gray);
+  transition: fill 300ms;
 }
 
 .navbar-icon {
-    width: min(15vw, 70px);
-    /* width: 70px; */
-    fill: var(--clr-accent);
-    cursor: pointer;
+  width: min(15vw, 70px);
+  /* width: 70px; */
+  fill: var(--clr-accent);
+  cursor: pointer;
 
-    &:hover {
-        fill: #fff;
-    }
+  &:hover {
+    fill: #fff;
+  }
 }
 
 .btn {
-    border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .btn-primary {
-    background-color: #fff;
-    border: 1px solid var(--clr-gray);
-    color: var(--clr-dark);
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0.5rem 1.1rem;
+  background-color: #fff;
+  border: 1px solid var(--clr-gray);
+  color: var(--clr-dark);
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.1rem;
 
-    &:hover {
-        background-color: #f3f3f3;
-    }
+  &:hover {
+    background-color: #f3f3f3;
+  }
 }
 
 .button-icon {
-    padding-left: 0.25rem;
+  padding-left: 0.25rem;
 }
 
 .fontawesome-replacement-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .fs-large {
-    font-size: clamp(1rem, 0.5rem + 2vw, 1.3rem);
-    font-weight: 600;
+  font-size: clamp(1rem, 0.5rem + 2vw, 1.3rem);
+  font-weight: 600;
 }
 
 .muted200 {
-    color: var(--clr-dark-200);
-    fill: var(--clr-dark-200);
+  color: var(--clr-dark-200);
+  fill: var(--clr-dark-200);
 }
 
 .muted250 {
-    color: var(--clr-dark-250);
-    fill: var(--clr-dark-250);
+  color: var(--clr-dark-250);
+  fill: var(--clr-dark-250);
 }
 
 .muted300 {
-    color: var(--clr-dark-300);
-    fill: var(--clr-dark-300);
+  color: var(--clr-dark-300);
+  fill: var(--clr-dark-300);
 }
 
 .padding-right-responsive {
-    padding-right: clamp(1rem, 0.5rem + 5vw, 2rem);
+  padding-right: clamp(1rem, 0.5rem + 5vw, 2rem);
+}
+
+.task-list {
+  background-color: #fff;
 }
