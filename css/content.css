@@ -100,6 +100,20 @@
   }
 }
 
+.aside {
+  border: 1px solid var(--clr-gray);
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+
+  .team__icons {
+    :first-child {
+      border: 2px dashed var(--clr-dark);
+      margin-right: 2em;
+    }
+  }
+}
+
 @media only screen and (min-width: 1279px) {
   .profile-header {
     margin-top: 3rem;
