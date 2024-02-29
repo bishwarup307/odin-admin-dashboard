@@ -145,6 +145,9 @@
 }
 
 @media only screen and (min-width: 1279px) {
+  .content {
+    padding-inline: 6rem;
+  }
   .content-wrapper {
     grid-template-columns: 1fr 500px;
     gap: 1rem;
@@ -155,6 +158,7 @@
   }
   .welcome-title {
     flex-direction: row;
+    justify-content: flex-start;
   }
   .welcome-buttons {
     justify-content: flex-end;
