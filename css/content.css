@@ -82,6 +82,7 @@
 
 .task__title {
     display: flex;
+    gap: 0.5rem;
     align-items: center;
     white-space: nowrap;
     flex-wrap: wrap;
