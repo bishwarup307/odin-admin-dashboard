@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     padding-inline: 2rem;
+    max-width: 96rem;
 }
 
 .profile-header {
@@ -37,6 +38,7 @@
     border-radius: 0.5rem;
     margin-top: 4rem;
     padding: 2rem 1rem;
+    box-shadow: 1px 1px 7px rgb(0 0 0 / 10%);
 }
 
 .task-header {
@@ -105,6 +107,7 @@
     border-radius: 0.5rem;
     margin-top: 2rem;
     padding: 2rem 1rem;
+    box-shadow: 1px 1px 7px rgb(0 0 0 / 10%);
 
     .team__icons {
         > div {
@@ -135,9 +138,14 @@
 @media only screen and (min-width: 1279px) {
     .profile-header {
         margin-top: 3rem;
+        /* padding-inline: 4rem; */
+    }
+    .content {
+        padding-inline: 6rem;
     }
     .welcome-title {
         flex-direction: row;
+        justify-content: flex-start;
     }
     .welcome-buttons {
         justify-content: flex-end;
