@@ -49,6 +49,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--clr-primary-500);
 }
 
 .profile-icon {
@@ -180,6 +181,10 @@ a {
   align-items: center;
 }
 
+.fs8 {
+  font-size: 0.8rem;
+}
+
 .fw500 {
   font-weight: 500;
 }
@@ -198,8 +203,39 @@ a {
   gap: 0.6rem;
 }
 
+.flex-col.no-gap {
+  gap: 0;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+}
+
+.tooltip {
+  position: absolute;
+  white-space: nowrap;
+  top: -130px;
+  left: 0;
+  border: 1px solid var(--clr-gray);
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+  z-index: 100;
+  background-color: #fff;
+  font-size: 0.9rem;
+
+  :nth-child(2) {
+    margin-bottom: 0.5rem;
+    margin-top: -0.3rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+div[data-name] {
+  position: relative;
+  padding: 1rem 0.3rem;
 }
